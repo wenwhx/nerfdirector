@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : "Revisiting View Selection in Neural Volume Rendering"
 name                     : "Wenhui Xiao, Leo Lebrat and Rodrigo Santa Cruz"
 description              : "This repository contains the official implementation of the paper NeRF Director: Revisiting View Selection in Neural Volume Rendering published in the Conference on Computer Vision and Pattern Recognition (CVPR24)."
-url                      : "https://lebrat.github.io"
-baseurl                  : "/NeRFDirector"
-repository               : lebrat/NeRFDirector/
+url                      : "https://wenwhx.github.io"
+baseurl                  : "/nerfdirector"
+repository               : wenwhx/nerfdirector/
 teaser                   : "/assets/images/Tessellation_MongeNet.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
