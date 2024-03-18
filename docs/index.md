@@ -10,13 +10,13 @@ header:
   "
   actions:
     - label: "Paper"
-      url: "https://github.com/lebrat/MongeNet"
+      url: "https://github.com/wenwhx/nerfdirector"
     - label: "Code"
-      url: "https://github.com/lebrat/MongeNet"
+      url: "https://github.com/wenwhx/nerfdirector"
     - label: "Slides"
-      url: "https://github.com/lebrat/MongeNet"
+      url: "https://github.com/wenwhx/nerfdirector"
     - label: "Talk"
-      url: "https://github.com/lebrat/MongeNet"
+      url: "https://github.com/wenwhx/nerfdirector"
 gallery_voronoi:
   - url: /assets/images/voronoi_monge.gif
     image_path: /assets/images/voronoi_monge.gif
