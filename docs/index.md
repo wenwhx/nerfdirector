@@ -4,9 +4,9 @@ author_profile: True
 classes: wide
 excerpt: "Revisiting View Selection in Neural Volume Rendering<br/>CVPR 2024"
 header:
-  overlay_image: /assets/images/Tessellation_MongeNet.png
+  overlay_image: /assets/images/ray_variance.png
   overlay_filter: 0.5
-  caption: "Voronoi Tessellation for MongeNet sampled points.
+  caption: "
   "
   actions:
     - label: "Paper"
