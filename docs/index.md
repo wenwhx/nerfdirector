@@ -22,13 +22,13 @@ gallery_voronoi:
     image_path: /assets/images/voronoi_unif.gif
     alt: "Standard random uniform mesh discretization by a point cloud"
     title: "Standard random uniform mesh discretization by a point cloud" 
-gallery_airplane:
-  - url: /assets/images/avion_mongenet.png
-    image_path: /assets/images/avion_mongenet.png
+gallery_testset:
+  - url: /assets/images/out_classic.mkv
+    video_path: /assets/images/out_classic.mkv
     alt: "MongeNet mesh discretization by a point cloud"
     title: "MongeNet mesh discretization by a point cloud"
-  - url: /assets/images/avion_uniform.png
-    image_path: /assets/images/avion_uniform.png
+  - url: /assets/images/out_new.mkv
+    video_path: /assets/images/out_new.mkv
     alt: "Standard random uniform mesh discretization by a point cloud"
     title: "Standard random uniform mesh discretization by a point cloud" 
 ---
@@ -41,7 +41,23 @@ Neural Rendering representations have significantly contributed to the field of 
 
 ## A Robust Testing Set
 
+<figure>
+  <div>
+  <video id="v0" width="40%" autoplay loop muted controls>
+    <source src="/nerfdirector/assets/images/out_classic.mp4" type="video/mp4">
+  </video>
+
+  <video id="v1" width="40%" autoplay loop muted controls>
+    <source src="/nerfdirector/assets/images/out_new.mp4" type="video/mp4">
+  </video>
+  </div>
+  <figcaption>Testing camera gantry comparisons. <em>Left:</em> Default. <em>Right:</em> Proposed.</figcaption>
+</figure>
+
+
 ## Visual Comparisons of Different View Selection Methods
+
+<canvas id="test" width="400" height="400"></canvas>
 
 <br/>
 
