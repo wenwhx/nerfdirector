@@ -23,7 +23,7 @@ gallery_voronoi:
     alt: "Standard random uniform mesh discretization by a point cloud"
     title: "Standard random uniform mesh discretization by a point cloud" 
 gallery_testset:
-  - url: /assets/images/out_classic.mkv
+  - url: /assets/images/default.gif
     video_path: /assets/images/out_classic.mkv
     alt: "MongeNet mesh discretization by a point cloud"
     title: "MongeNet mesh discretization by a point cloud"
@@ -43,11 +43,11 @@ Neural Rendering representations have significantly contributed to the field of 
 
 <figure>
   <div>
-  <video id="v0" width="40%" autoplay loop muted controls>
+  <video id="v0" width="48%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/out_classic.mp4" type="video/mp4">
   </video>
 
-  <video id="v1" width="40%" autoplay loop muted controls>
+  <video id="v1" width="48%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/out_new.mp4" type="video/mp4">
   </video>
   </div>
