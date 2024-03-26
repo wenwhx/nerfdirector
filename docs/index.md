@@ -59,15 +59,15 @@ Neural Rendering representations have significantly contributed to the field of 
 
 <figure>
   <div>
-  <video id="v0" width="48%" autoplay loop muted controls>
+  <video id="v0" width="100%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/truck_old.webm" type="video/webm">
   </video>
 
-  <video id="v1" width="48%" autoplay loop muted controls>
+  <video id="v1" width="100%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/truck_new.webm" type="video/webm">
   </video>
   </div>
-  <figcaption>Visualization of camera selected via different view selection methods. <em>Left:</em> Ramdom Sampling (RS) on default. <em>Right:</em> Proposed Farthest View Sampling (FVS) distributing cameras evenly around the target object.</figcaption>
+  <figcaption>Visualization of 80 camera selected via different view selection methods on 'Truck' scene. <em>Top:</em> Ramdom Sampling (RS) on default. <em>Bottom:</em> Proposed Farthest View Sampling (FVS) distributing cameras evenly around the target object.</figcaption>
 </figure>
 
 <canvas id="test" width="400" height="400"></canvas>
