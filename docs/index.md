@@ -4,7 +4,7 @@ author_profile: True
 classes: wide
 excerpt: "Revisiting View Selection in Neural Volume Rendering<br/>CVPR 2024"
 header:
-  overlay_image: /assets/images/ray_variance.png
+  overlay_image: /assets/images/banner_ext.png
   overlay_filter: 0.5
   caption: "
   "
@@ -13,24 +13,20 @@ header:
       url: "https://github.com/wenwhx/nerfdirector"
     # - label: "Code"
     #   url: "https://github.com/wenwhx/nerfdirector"
-gallery_voronoi:
-  - url: /assets/images/voronoi_monge.gif
-    image_path: /assets/images/voronoi_monge.gif
-    alt: "MongeNet mesh discretization by a point cloud"
-    title: "MongeNet mesh discretization by a point cloud"
-  - url: /assets/images/voronoi_unif.gif
-    image_path: /assets/images/voronoi_unif.gif
-    alt: "Standard random uniform mesh discretization by a point cloud"
-    title: "Standard random uniform mesh discretization by a point cloud" 
-gallery_testset:
+gallery_default_test:
   - url: /assets/images/default.gif
-    video_path: /assets/images/out_classic.mkv
-    alt: "MongeNet mesh discretization by a point cloud"
-    title: "MongeNet mesh discretization by a point cloud"
-  - url: /assets/images/out_new.mkv
-    video_path: /assets/images/out_new.mkv
-    alt: "Standard random uniform mesh discretization by a point cloud"
-    title: "Standard random uniform mesh discretization by a point cloud" 
+    image_path: /assets/images/default.gif
+    alt: "Default pose of the original testing camera and 10 additional rotated versions"
+    title: "Default pose of the original testing camera and 10 additional rotated versions"
+  - url: /assets/images/original_rank.png
+    image_path: /assets/images/original_rank.png
+gallery_propose_test:
+  - url: /assets/images/new.gif
+    image_path: /assets/images/new.gif
+    alt: "Default pose of our proposed testing camera and 10 additional rotated versions"
+    title: "Default pose of our proposed testing camera and 10 additional rotated versions"
+  - url: /assets/images/propose_rank.png
+    image_path: /assets/images/propose_rank.png
 ---
 
 Code and datasets will be available soon!
@@ -42,18 +38,38 @@ Neural Rendering representations have significantly contributed to the field of 
 ## A Robust Testing Set
 
 <figure>
+  <figcaption>360 visual comparisons between default testing camera distribution of the NeRF Synthetic dataset and our proposed one. <em>Left:</em> Default testing cameras are in a constant simple track. <em>Right:</em> Proposed testing cameras are distributed evenly around the target.</figcaption>
   <div>
-  <video id="v0" width="48%" autoplay loop muted controls>
+  <video id="blender" width="48%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/out_classic.mp4" type="video/mp4">
   </video>
 
-  <video id="v1" width="48%" autoplay loop muted controls>
+  <video id="blender" width="48%" autoplay loop muted controls>
     <source src="/nerfdirector/assets/images/out_new.mp4" type="video/mp4">
   </video>
   </div>
-  <figcaption>Testing camera gantry comparisons. <em>Left:</em> Default. <em>Right:</em> Proposed.</figcaption>
 </figure>
 
+### Ranking inversion of SOTA NeRF models
+We apply 10 rotations to the default testing cameras and generate 10 additional testing sets. We evaluate the pre-trained checkpoint of 4 SOTA NeRF models (JaxNeRF, MipNeRF, Plenoxels, and InstantNGP) on all these testing sets. The ranking are variated across different rotations.
+{% include gallery id="gallery_default_test" caption="Ranking inversion across different rotations occurs on the original testing camera."%}
+
+Our proposed test set, evenly distributed on the sphere with the target as the center, can provide a consistent comparison across different rotations.
+{% include gallery id="gallery_propose_test" caption="Our proposed test sest provides a robust evaluation."%}
+
+### Proposed test set on TanksAndTemple dataset
+<figure>
+  <figcaption>360 visual comparisons of view coverage between default testing camera distribution of the TanksAndTemple dataset and our proposed one. <em>Left:</em> Default test set only coverages parts of the target. <em>Right:</em> Proposed testing cameras achieves a more uniform coverage of the target.</figcaption>
+  <div>
+  <video id="tnt" width="48%" autoplay loop muted controls>
+    <source src="/nerfdirector/assets/images/m60_test.webm" type="video/webm">
+  </video>
+
+  <video id="tnt" width="48%" autoplay loop muted controls>
+    <source src="/nerfdirector/assets/images/m60_ours.webm" type="video/webm">
+  </video>
+  </div>
+</figure>
 
 ## Visual Comparisons of Different View Selection Methods
 
