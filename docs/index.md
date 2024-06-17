@@ -9,8 +9,8 @@ header:
   caption: "
   "
   actions:
-    - label: "Paper"
-      url: "https://github.com/wenwhx/nerfdirector"
+    - label: "Paper(ArXiv)"
+      url: "https://arxiv.org/abs/2406.08839"
     # - label: "Code"
     #   url: "https://github.com/wenwhx/nerfdirector"
 gallery_default_test:
@@ -101,5 +101,3 @@ If you find this work useful, please cite
 }
 ```
 
-## Acknowledgment 
-This research was supported by [Maxwell plus](https://maxwellplus.com/)
