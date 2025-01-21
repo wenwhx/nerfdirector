@@ -11,8 +11,10 @@ header:
   actions:
     - label: "Paper(ArXiv)"
       url: "https://arxiv.org/abs/2406.08839"
-    # - label: "Code"
-    #   url: "https://github.com/wenwhx/nerfdirector"
+    - label: "Code"
+      url: "https://github.com/wenwhx/nerfdirector"
+    - label: "Datasets"
+      url: "https://data.csiro.au/collection/csiro:63796"
 gallery_default_test:
   - url: /assets/images/default.gif
     image_path: /assets/images/default.gif
@@ -29,7 +31,9 @@ gallery_propose_test:
     image_path: /assets/images/propose_rank.png
 ---
 
-Code and datasets will be available soon!
+## News!
+
+Our code and datasets are available now!
 
 ## Abstract
 
