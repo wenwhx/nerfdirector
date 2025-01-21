@@ -1,0 +1,7 @@
+/.vscode
+/.vs
+/*build
+__pycache__
+.DS_Store
+*.log
+*.ipynb
