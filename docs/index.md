@@ -31,7 +31,6 @@ gallery_propose_test:
     image_path: /assets/images/propose_rank.png
 ---
 
-## News!
 
 Our code and datasets are available now!
 
